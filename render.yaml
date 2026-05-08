@@ -8,10 +8,6 @@ services:
       url: docker.io/n8nio/n8n:latest
     autoDeploy: true
     healthCheckPath: /healthz
-    disk:
-      name: n8n-data
-      mountPath: /home/node/.n8n/binaryData
-      sizeGB: 1
     envVars:
       - key: DB_TYPE
         value: postgresdb
